@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro ACLC Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="topbar">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+
+            <div>
+                <h2>Libro ACLC</h2>
+                <span>Learning Resource Center Engine</span>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search catalog by title, author, rack, or ISBN...">
+        </div>
+
+        <div class="user-section">
+            <button class="mode-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <div class="role-switch">
+                <button class="active">Librarian</button>
+                <button>Student/Faculty</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <ul>
+                <li class="active">
+                    <i class="fas fa-chart-pie"></i>
+                    Dashboard
+                </li>
+
+                <li>
+                    <i class="fas fa-book"></i>
+                    Book Catalog
+                </li>
+
+                <li>
+                    <i class="fas fa-users"></i>
+                    Member Directory
+                </li>
+
+                <li>
+                    <i class="fas fa-right-left"></i>
+                    Borrow / Return Desk
+                </li>
+
+                <li>
+                    <i class="fas fa-clock-rotate-left"></i>
+                    Audit Logs
+                </li>
+
+                <li>
+                    <i class="fas fa-sliders"></i>
+                    System Settings
+                </li>
+
+                <li>
+                    <i class="fas fa-rotate"></i>
+                    Reset Data
+                </li>
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <!-- Hero -->
+            <section class="hero">
+                <span class="badge">Campus Librarian Desk</span>
+
+                <h1>Welcome to Libro ACLC</h1>
+
+                <p>
+                    ACLC College Learning Resource Center management system.
+                    Track circulation, manage student loans, and view academic
+                    catalog reserves.
+                </p>
+            </section>
+
+            <!-- Stats -->
+            <section class="stats">
+
+                <div class="card">
+                    <div>
+                        <h3>CATALOG INVENTORY</h3>
+                        <h2>22</h2>
+                        <p>5 Titles Registered</p>
+                    </div>
+
+                    <div class="icon blue">
+                        <i class="fas fa-book"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <h3>ISSUED COPIES</h3>
+                        <h2>0</h2>
+                        <p>Active loans</p>
+                    </div>
+
+                    <div class="icon orange">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <h3>OVERDUE BOOKS</h3>
+                        <h2>0</h2>
+                        <p>Pending fines</p>
+                    </div>
+
+                    <div class="icon red">
+                        <i class="fas fa-triangle-exclamation"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <h3>ACLC MEMBERS</h3>
+                        <h2>4</h2>
+                        <p>Students & Faculty</p>
+                    </div>
+
+                    <div class="icon green">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Activity + Actions -->
+            <section class="bottom-grid">
+
+                <div class="activity">
+                    <div class="title-row">
+                        <h2>Recent Borrowing Activity</h2>
+                        <a href="#">View All</a>
+                    </div>
+
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>BOOK TITLE</th>
+                            <th>MEMBER</th>
+                            <th>DUE DATE</th>
+                            <th>STATUS</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td colspan="4" class="empty">
+                                No recent transactions recorded.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="quick-actions">
+                    <h2>Quick Actions</h2>
+
+                    <button>
+                        <i class="fas fa-plus"></i>
+                        Issue New Book
+                    </button>
+
+                    <button>
+                        <i class="fas fa-rotate-left"></i>
+                        Process Book Return
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
